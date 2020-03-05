@@ -11,6 +11,8 @@ jobs:
       USER_NAME   : githubaction
       USER_EMAIL  : githubaction@fake.com
       PUBLISH_DIR : ./dist
+      enableBaseUrl: ${{ secrets.enableBaseUrl }}
+      baseUrl: ${{ secrets.baseUrl }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
